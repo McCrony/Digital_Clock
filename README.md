@@ -6,5 +6,5 @@ It is a simple digital clock with these features
   - Seconds (00)
   - AM or PM 
 
-Live: www.mccrony.github.io/Digital_Clock/
+Live: https://mccrony.github.io/Digital_Clock/
 ## HTML | CSS | JS
