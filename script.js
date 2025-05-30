@@ -20,6 +20,9 @@ setInterval(()=>{
 
         if(hours < 12){
             hourElement.textContent = `0${hours}`;
+            am_pmElement.textContent = 'AM';
+        }else{
+            am_pmElement.textContent = 'PM';
         }
     
         if(minutes < 10){
@@ -27,6 +30,7 @@ setInterval(()=>{
         }
     
         if(seconds < 10){
-            secElementElement.textContent = `0${seconds}`;
+            secElement.textContent = `0${seconds}`;
         }
+
 }, 1000)
