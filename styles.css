@@ -21,18 +21,30 @@ body{
     display: flex;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
 .hours, .minutes, .seconds {
     background-color: rgb(192, 192, 229);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    padding: 25px 15px;
+    min-width: 150px;
+    padding: 15px 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
+}
+
+.colon{
+    font-size: 3rem;
+    animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
 
 .hours #hrs, .minutes #min, .seconds #secs {
